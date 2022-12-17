@@ -1,0 +1,27 @@
+name: docs
+
+on:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    name: Build & Deploy Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Build docs
+        run: |
+          mkdir build
+          mkdir build/AnkiAssets
+          touch build/.nojekyll
+          mv assets/* build/AnkiAssets
+
+      - name: Deploy docs
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
