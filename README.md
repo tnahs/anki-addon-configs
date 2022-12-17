@@ -1,1 +1,1 @@
-# anki-addon-configs
+# AnkiAssets Config
