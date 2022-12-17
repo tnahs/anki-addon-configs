@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>anki-assets-setup</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <style>
+    body.nightMode {
+      background-color: hsl(0, 0%, 20%);
+    }
+
+    #theme-selector {
+      margin: 25px;
+      text-align: center;
+    }
+
+    .card,
+    .card.nightMode {
+      margin-top: 0;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .name {
+      font-weight: bold;
+      color: hsl(230deg, 60%, 70%);
+    }
+  </style>
+  <script src="js/base.js" defer></script>
+  <script>
+    function setTheme() {
+      body = document.querySelector("body");
+      card = document.querySelector(".card");
+
+      theme = document.querySelector("#theme-selector").value;
+
+      if (theme == "dark") {
+        body.classList.add("nightMode");
+        card.classList.add("nightMode");
+      } else {
+        body.classList.remove("nightMode");
+        card.classList.remove("nightMode");
+      }
+    }
+  </script>
+</head>
+
+<body onload="setTheme(); setupPeekFields();">
+  <div class="center">
+    <select id="theme-selector" onchange="setTheme()">
+      <option value="light">Light Mode</option>
+      <option value="dark">Dark Mode</option>
+    </select>
+  </div>
+  <div class="card">
+    <div id="qa">
+      <div class="field">This is a <span class="name">field</span>.</div>
+      <div class="field bigger">This is a <span class="name">bigger</span> field.</div>
+      <div class="field color">This is a <span class="name">color</span> field.</div>
+      <div class="field gray">This is a <span class="name">gray</span> field.</div>
+      <div class="field clear">This is a <span class="name">clear</span> field.</div>
+      <div class="field center">
+        This is a <span class="name">center</span> field.
+        <br>
+        The field below is a <span class="name">blank</span> field.
+      </div>
+      <div class="field blank"></div>
+      <div class="field peek">This is a <span class="name">peek</span> field.</div>
+      <div class="field paragraph">
+        <p>
+          This is a <span class="name">paragraph</span> field. Each paragraph is
+          wrapped in a &lt;p&gt; tag.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          vestibulum arcu eget lacus laoreet, et pulvinar eros rutrum. Fusce
+          pulvinar purus id ipsum congue consequat. Etiam sodales ante vitae
+          urna fringilla lobortis. Suspendisse neque nisl, sollicitudin sed
+          mattis non, venenatis et odio. Donec rutrum vel lorem in dapibus.
+        </p>
+        <p>
+          Proin aliquet turpis fringilla, venenatis tortor a, gravida arcu. Duis
+          posuere dolor quis vehicula vestibulum. Interdum et malesuada fames ac
+          ante ipsum primis in faucibus. Maecenas feugiat leo et varius euismod.
+          Maecenas tortor ex, pretium ut diam a, pellentesque blandit enim.
+          Morbi blandit rutrum malesuada. Proin a nulla libero.
+        </p>
+      </div>
+      <div class="field">
+        <ol>
+          <li>
+            Ordered List Item
+            <ul>
+              <li>Unordered List Item</li>
+            </ul>
+          </li>
+          <li>
+            Ordered List Item
+            <ol>
+              <li>Ordered List Item</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div class="field">
+        <ul>
+          <li>
+            Unordered List Item
+            <ul>
+              <li>Unordered List Item</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="field tags">This is a <span class="name">tags</span> field.</div>
+      <div class="field footer">
+        This is a <span class="name">footer</span> field.
+        With a <a href="#">link.</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

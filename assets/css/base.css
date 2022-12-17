@@ -1,0 +1,293 @@
+@import "_normalize.css";
+@import "_fonts.css";
+.card {
+  margin: 50px;
+  font-family: "FF DIN Round";
+  font-weight: 400;
+  line-height: 120%;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.card a {
+  color: hsla(0deg, 0%, 0%, 0.4);
+  transition: color 0.15s;
+}
+.card a:hover {
+  color: hsla(0deg, 0%, 0%, 0.4);
+}
+.card .field {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 700px;
+  min-width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: hsla(0deg, 0%, 0%, 0.05);
+  color: hsla(0deg, 0%, 0%, 0.55);
+  font-size: 11pt;
+}
+.card .field + .field {
+  margin-top: 5px;
+}
+.card .field.bigger {
+  color: hsla(0deg, 0%, 0%, 0.7);
+  font-size: 16pt;
+  line-height: 120%;
+}
+.card .field.narrow {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+.card .field.color {
+  border-top: 3px solid hsl(230deg, 60%, 70%);
+}
+.card .field.gray {
+  border-top: 3px solid hsla(0deg, 0%, 0%, 0.15);
+}
+.card .field.clear {
+  background-color: unset;
+}
+.card .field.center {
+  text-align: center;
+}
+.card .field.blank, .card .field.blank:empty {
+  display: block;
+  font-size: 0;
+  color: transparent;
+  height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.card .field.paragraph {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: hsla(0deg, 0%, 0%, 0.45);
+  font-size: 10pt;
+  line-height: 150%;
+  text-align: justify;
+  text-indent: 5px;
+}
+.card .field.tags {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsla(0deg, 0%, 0%, 0.3);
+  font-size: 10pt;
+  text-align: center;
+}
+.card .field.footer {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsla(0deg, 0%, 0%, 0.4);
+  font-size: 10pt;
+  text-align: center;
+}
+.card .field.image {
+  padding: unset;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+.card .field img {
+  max-height: 300px;
+  border-left: solid 5px hsl(0deg, 0%, 100%);
+  border-right: solid 5px hsl(0deg, 0%, 100%);
+}
+p:first-of-type .card .field {
+  margin-top: 0;
+}
+p:last-of-type .card .field {
+  margin-bottom: 0;
+}
+.card .field:empty {
+  display: none;
+}
+.card .field ul, .card .field ol {
+  font-size: 10pt;
+  list-style-position: outside;
+  margin: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 10px;
+}
+.card .field ul {
+  list-style-image: url("../images/base.bullet.light.png");
+}
+.card .field li ol, .card .field li ul {
+  margin-top: 5px;
+}
+.card .field ul li + li, .card .field ol li + li {
+  margin-top: 5px;
+}
+
+.card .field.peek {
+  background-image: url("../images/base.peek.light.png");
+  background-size: 600px 150px;
+}
+.card .field.peek > ._peek {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.card .field.peek:hover > ._peek {
+  opacity: 1;
+}
+
+.card.nightMode {
+  margin: 50px;
+  font-family: "FF DIN Round";
+  font-weight: 400;
+  line-height: 120%;
+  background-color: hsl(0deg, 0%, 20%);
+}
+.card.nightMode a {
+  color: hsla(0deg, 0%, 100%, 0.65);
+  transition: color 0.15s;
+}
+.card.nightMode a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+.card.nightMode .field {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 700px;
+  min-width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 11pt;
+}
+.card.nightMode .field + .field {
+  margin-top: 5px;
+}
+.card.nightMode .field.bigger {
+  color: hsla(0deg, 0%, 100%, 0.9);
+  font-size: 16pt;
+  line-height: 120%;
+}
+.card.nightMode .field.narrow {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+.card.nightMode .field.color {
+  border-top: 3px solid hsl(230deg, 50%, 60%);
+}
+.card.nightMode .field.gray {
+  border-top: 3px solid hsla(0deg, 0%, 100%, 0.25);
+}
+.card.nightMode .field.clear {
+  background-color: unset;
+}
+.card.nightMode .field.center {
+  text-align: center;
+}
+.card.nightMode .field.blank, .card.nightMode .field.blank:empty {
+  display: block;
+  font-size: 0;
+  color: transparent;
+  height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.card.nightMode .field.paragraph {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 10pt;
+  line-height: 150%;
+  text-align: justify;
+  text-indent: 5px;
+}
+.card.nightMode .field.tags {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: hsl(0deg, 0%, 20%);
+  color: hsla(0deg, 0%, 100%, 0.45);
+  font-size: 10pt;
+  text-align: center;
+}
+.card.nightMode .field.footer {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: hsl(0deg, 0%, 20%);
+  color: hsla(0deg, 0%, 100%, 0.65);
+  font-size: 10pt;
+  text-align: center;
+}
+.card.nightMode .field.image {
+  padding: unset;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+.card.nightMode .field img {
+  max-height: 300px;
+  border-left: solid 5px hsl(0deg, 0%, 20%);
+  border-right: solid 5px hsl(0deg, 0%, 20%);
+}
+p:first-of-type .card.nightMode .field {
+  margin-top: 0;
+}
+p:last-of-type .card.nightMode .field {
+  margin-bottom: 0;
+}
+.card.nightMode .field:empty {
+  display: none;
+}
+.card.nightMode .field ul, .card.nightMode .field ol {
+  font-size: 10pt;
+  list-style-position: outside;
+  margin: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 10px;
+}
+.card.nightMode .field ul {
+  list-style-image: url("../images/base.bullet.dark.png");
+}
+.card.nightMode .field li ol, .card.nightMode .field li ul {
+  margin-top: 5px;
+}
+.card.nightMode .field ul li + li, .card.nightMode .field ol li + li {
+  margin-top: 5px;
+}
+
+.card.nightMode .field.peek {
+  background-image: url("../images/base.peek.dark.png");
+  background-size: 600px 150px;
+}
+.card.nightMode .field.peek > ._peek {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.card.nightMode .field.peek:hover > ._peek {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=base.css.map */

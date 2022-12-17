@@ -1,0 +1,191 @@
+/* FF DIN Round ------------------------------------------------------------ */
+
+@font-face {
+  font-family: "FF DIN Round";
+  src: url("../fonts/FF DIN Round/FF\ DIN\ Round\ Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FF DIN Round";
+  src: url("../fonts/FF DIN Round/FF\ DIN\ Round\ Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FF DIN Round";
+  src: url("../fonts/FF DIN Round/FF\ DIN\ Round\ Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FF DIN Round";
+  src: url("../fonts/FF DIN Round/FF\ DIN\ Round\ Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FF DIN Round";
+  src: url("../fonts/FF DIN Round/FF\ DIN\ Round\ Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* KanjiStrokeOrders ------------------------------------------------------- */
+
+@font-face {
+  font-family: "KanjiStrokeOrders";
+  src: url("../fonts/KanjiStrokeOrders_v4.002/KanjiStrokeOrders_v4.002.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SourceHanSerif ---------------------------------------------------------- */
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-ExtraLight.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceHanSerif";
+  src: url("../fonts/source-han-serif/SourceHanSerif-Heavy.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*  */
+
+@font-face {
+  font-family: "M+ Type-1";
+  src: url("../fonts/mplus-TESTFLIGHT-063/mplus-1m-thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "M+ Type-1";
+  src: url("../fonts/mplus-TESTFLIGHT-063/mplus-1m-light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "M+ Type-1";
+  src: url("../fonts/mplus-TESTFLIGHT-063/mplus-1m-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "M+ Type-1";
+  src: url("../fonts/mplus-TESTFLIGHT-063/mplus-1m-medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "M+ Type-1";
+  src: url("../fonts/mplus-TESTFLIGHT-063/mplus-1m-bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* EPSON TrueTypeFont ------------------------------------------------------ */
+
+@font-face {
+  font-family: "EPSON TrueTypeFont Brush";
+  src: url("../fonts/ttf31e/Converted/EPSON-KYOKASHO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont Brush";
+  src: url("../fonts/ttf31e/Converted/EPSON-KAISHO.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont WetBrush";
+  src: url("../fonts/ttf31e/converted/EPSON-GYOSHO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont WetBrush";
+  src: url("../fonts/ttf31e/Converted/EPSON-FUTO-GYOSHO.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont BlackMincho";
+  src: url("../fonts/ttf31e/Converted/EPSON-FUTO-MINCHO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont RoundGothic";
+  src: url("../fonts/ttf31e/Converted/EPSON-MARUGO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont RoundGothic";
+  src: url("../fonts/ttf31e/Converted/EPSON-FUTO-MARUGO.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EPSON TrueTypeFont BlackGothic";
+  src: url("../fonts/ttf31e/Converted/EPSON-FUTO-KAKUGO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

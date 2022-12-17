@@ -1,0 +1,5 @@
+@use "themes";
+@use "mixin-music";
+
+@include mixin-music.build-stylesheet($theme: light, $colors: themes.$light);
+@include mixin-music.build-stylesheet($theme: dark, $colors: themes.$dark);

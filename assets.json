@@ -1,0 +1,10 @@
+{
+    "css": {
+        "music.css": true,
+        "japanese.css": true,
+        "base.css": true
+    },
+    "javascript": {
+        "base.js": true
+    }
+}

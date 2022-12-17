@@ -1,0 +1,35 @@
+$light: (
+  //
+  accent-color: hsla(230, 60%, 70%, 1),
+  accent-gray: hsla(0, 0%, 0%, 0.15),
+  //
+  card__background-color: hsla(0, 0%, 100%, 1),
+  card__link-text-color: hsla(0, 0%, 0%, 0.4),
+  card__link-text-color-hover: hsla(0, 0%, 0%, 0.4),
+  //
+  field__background-color: hsla(0, 0%, 0%, 0.05),
+  field__text-color: hsla(0, 0%, 0%, 0.55),
+  //
+  field-bigger__text-color: hsla(0, 0%, 0%, 0.7),
+  field-paragraph__text-color: hsla(0, 0%, 0%, 0.45),
+  field-tags__text-color: hsla(0, 0%, 0%, 0.3),
+  field-footer__text-color: hsla(0, 0%, 0%, 0.4)
+);
+
+$dark: (
+  //
+  accent-color: hsla(230, 50%, 60%, 1),
+  accent-gray: hsla(0, 0%, 100%, 0.25),
+  //
+  card__background-color: hsla(0, 0%, 20%, 1),
+  card__link-text-color: hsla(0, 0%, 100%, 0.65),
+  card__link-text-color-hover: hsla(0, 0%, 100%, 1),
+  //
+  field__background-color: hsla(0, 0%, 100%, 0.1),
+  field__text-color: hsla(0, 0%, 100%, 0.75),
+  //
+  field-bigger__text-color: hsla(0, 0%, 100%, 0.9),
+  field-paragraph__text-color: hsla(0, 0%, 100%, 0.6),
+  field-tags__text-color: hsla(0, 0%, 100%, 0.45),
+  field-footer__text-color: hsla(0, 0%, 100%, 0.65)
+);
