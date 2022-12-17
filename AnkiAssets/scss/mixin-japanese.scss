@@ -1,0 +1,103 @@
+@use "defaults";
+
+$font-brush-dry: "EPSON TrueTypeFont Brush";
+$font-brush-wet: "EPSON TrueTypeFont WetBrush";
+
+$font-gothic: "M+ Type-1";
+$font-mincho: "SourceHanSerif";
+$font-brush: $font-brush-dry;
+$font-strokes: "KanjiStrokeOrders";
+
+$jp-kanji-gothic__font-family: $font-gothic;
+$jp-kanji-mincho__font-family: $font-mincho;
+$jp-kanji-brush__font-family: $font-brush;
+$jp-kanji-strokes__font-family: $font-strokes;
+
+$jp-expression__font-family: $font-gothic;
+
+@mixin build-stylesheet($theme, $colors) {
+  $card: ".card";
+
+  @if $theme==dark {
+    $card: ".card.nightMode";
+  }
+
+  #{$card} {
+    .field {
+      &.jp-kanji {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+
+        color: map-get($colors, jp-kanji__font-color);
+        font-size: 100pt;
+        line-height: 150px;
+
+        text-align: center;
+
+        background-color: unset;
+
+        .gothic {
+          font-family: $jp-kanji-gothic__font-family;
+          font-weight: 300;
+        }
+
+        .mincho {
+          font-family: $jp-kanji-mincho__font-family;
+          font-weight: 300;
+        }
+
+        .brush {
+          font-family: $jp-kanji-brush__font-family;
+          font-weight: bold;
+        }
+
+        .strokes {
+          font-family: $jp-kanji-strokes__font-family;
+          font-weight: normal;
+        }
+      }
+
+      &.jp-expression {
+        font-family: $jp-expression__font-family;
+        color: map-get($colors, field__text-color);
+        font-size: 18pt;
+        font-weight: 300;
+        line-height: 150%;
+
+        ruby {
+          color: map-get($colors, accent-color);
+        }
+
+        ruby rt {
+          font-weight: 500;
+        }
+
+        :hover ruby rt {
+          // For future reference.
+        }
+      }
+
+      // English mixed with japanese text styling.
+      &.jp-bilingual {
+        font-family: defaults.$card__font-family;
+        color: map-get($colors, field__text-color);
+        font-size: 11pt;
+        line-height: 150%;
+      }
+
+      &.jp-kana-image {
+        padding: 0;
+
+        text-align: center;
+
+        background-color: unset;
+
+        img {
+          max-height: 200px;
+        }
+      }
+    }
+  }
+}

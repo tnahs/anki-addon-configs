@@ -1,0 +1,211 @@
+@use "defaults";
+
+@import "_normalize.css";
+@import "_fonts.css";
+
+@mixin build-stylesheet($theme, $colors) {
+  $card: ".card";
+
+  @if $theme==dark {
+    $card: ".card.nightMode";
+  }
+
+  #{$card} {
+    margin: 50px;
+
+    font-family: defaults.$card__font-family;
+    font-weight: defaults.$card__font-weight;
+    line-height: 120%;
+
+    background-color: map-get($colors, card__background-color);
+
+    a {
+      color: map-get($colors, card__link-text-color);
+
+      transition: color 0.15s;
+
+      &:hover {
+        color: map-get($colors, card__link-text-color-hover);
+      }
+    }
+
+    .field {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      margin: auto;
+
+      max-width: defaults.$field__width-max;
+      min-width: defaults.$field__width-min;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
+
+      background-color: map-get($colors, field__background-color);
+
+      color: map-get($colors, field__text-color);
+      font-size: defaults.$field__font-size;
+
+      & + .field {
+        margin-top: defaults.$field__sibling-margins;
+      }
+
+      &.bigger {
+        color: map-get($colors, field-bigger__text-color);
+        font-size: defaults.$field-bigger__font-size;
+        line-height: 120%;
+      }
+
+      &.narrow {
+        padding-top: 10px;
+        padding-bottom: 11px;
+      }
+
+      &.color {
+        border-top: 3px solid map-get($colors, accent-color);
+      }
+
+      &.gray {
+        border-top: 3px solid map-get($colors, accent-gray);
+      }
+
+      &.clear {
+        background-color: unset;
+      }
+
+      &.center {
+        text-align: center;
+      }
+
+      &.blank,
+      &.blank:empty {
+        display: block;
+
+        font-size: 0;
+        color: transparent;
+
+        height: defaults.$field-empty__height;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &.paragraph {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+
+        color: map-get($colors, field-paragraph__text-color);
+        font-size: defaults.$field-paragraph__font-size;
+        line-height: 150%;
+        text-align: justify;
+        text-indent: 5px;
+      }
+
+      &.tags {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        background-color: map-get($colors, card__background-color);
+
+        color: map-get($colors, field-tags__text-color);
+        font-size: defaults.$field-tags__font-size;
+        text-align: center;
+      }
+
+      &.footer {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        background-color: map-get($colors, card__background-color);
+
+        color: map-get($colors, field-footer__text-color);
+        font-size: defaults.$field-footer__font-size;
+        text-align: center;
+      }
+
+      &.image {
+        padding: unset;
+
+        text-align: center;
+        font-size: 0;
+        line-height: 0;
+      }
+
+      & img {
+        max-height: 300px;
+
+        border-left: solid 5px map-get($colors, card__background-color);
+        border-right: solid 5px map-get($colors, card__background-color);
+      }
+
+      p:first-of-type & {
+        margin-top: 0;
+      }
+
+      p:last-of-type & {
+        margin-bottom: 0;
+      }
+
+      &:empty {
+        display: none;
+      }
+
+      & ul,
+      & ol {
+        font-size: defaults.$field-list__font-size;
+
+        list-style-position: outside;
+
+        margin: unset;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 10px;
+      }
+
+      & ul {
+        list-style-image: url("../images/base.bullet.#{$theme}.png");
+      }
+
+      & li ol,
+      & li ul {
+        margin-top: 5px;
+      }
+
+      & ul li + li,
+      & ol li + li {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  #{$card} {
+    .field {
+      &.peek {
+        background-image: url("../images/base.peek.#{$theme}.png");
+        background-size: 600px 150px;
+
+        & > ._peek {
+          opacity: 0;
+          transition: opacity 0.15s;
+        }
+
+        &:hover > ._peek {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

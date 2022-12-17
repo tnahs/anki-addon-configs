@@ -1,0 +1,111 @@
+.card .field.jp-kanji {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  color: hsla(0deg, 0%, 0%, 0.3);
+  font-size: 100pt;
+  line-height: 150px;
+  text-align: center;
+  background-color: unset;
+}
+.card .field.jp-kanji .gothic {
+  font-family: "M+ Type-1";
+  font-weight: 300;
+}
+.card .field.jp-kanji .mincho {
+  font-family: "SourceHanSerif";
+  font-weight: 300;
+}
+.card .field.jp-kanji .brush {
+  font-family: "EPSON TrueTypeFont Brush";
+  font-weight: bold;
+}
+.card .field.jp-kanji .strokes {
+  font-family: "KanjiStrokeOrders";
+  font-weight: normal;
+}
+.card .field.jp-expression {
+  font-family: "M+ Type-1";
+  color: hsla(0deg, 0%, 0%, 0.55);
+  font-size: 18pt;
+  font-weight: 300;
+  line-height: 150%;
+}
+.card .field.jp-expression ruby {
+  color: hsl(230deg, 60%, 70%);
+}
+.card .field.jp-expression ruby rt {
+  font-weight: 500;
+}
+.card .field.jp-bilingual {
+  font-family: "FF DIN Round";
+  color: hsla(0deg, 0%, 0%, 0.55);
+  font-size: 11pt;
+  line-height: 150%;
+}
+.card .field.jp-kana-image {
+  padding: 0;
+  text-align: center;
+  background-color: unset;
+}
+.card .field.jp-kana-image img {
+  max-height: 200px;
+}
+
+.card.nightMode .field.jp-kanji {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  color: hsla(0deg, 0%, 100%, 0.3);
+  font-size: 100pt;
+  line-height: 150px;
+  text-align: center;
+  background-color: unset;
+}
+.card.nightMode .field.jp-kanji .gothic {
+  font-family: "M+ Type-1";
+  font-weight: 300;
+}
+.card.nightMode .field.jp-kanji .mincho {
+  font-family: "SourceHanSerif";
+  font-weight: 300;
+}
+.card.nightMode .field.jp-kanji .brush {
+  font-family: "EPSON TrueTypeFont Brush";
+  font-weight: bold;
+}
+.card.nightMode .field.jp-kanji .strokes {
+  font-family: "KanjiStrokeOrders";
+  font-weight: normal;
+}
+.card.nightMode .field.jp-expression {
+  font-family: "M+ Type-1";
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 18pt;
+  font-weight: 300;
+  line-height: 150%;
+}
+.card.nightMode .field.jp-expression ruby {
+  color: hsl(230deg, 50%, 60%);
+}
+.card.nightMode .field.jp-expression ruby rt {
+  font-weight: 500;
+}
+.card.nightMode .field.jp-bilingual {
+  font-family: "FF DIN Round";
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 11pt;
+  line-height: 150%;
+}
+.card.nightMode .field.jp-kana-image {
+  padding: 0;
+  text-align: center;
+  background-color: unset;
+}
+.card.nightMode .field.jp-kana-image img {
+  max-height: 200px;
+}
+
+/*# sourceMappingURL=japanese.css.map */

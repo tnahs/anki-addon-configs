@@ -1,0 +1,52 @@
+@use "defaults";
+
+@mixin build-stylesheet($theme, $colors) {
+  $card: ".card";
+
+  @if $theme==dark {
+    $card: ".card.nightMode";
+  }
+
+  #{$card} {
+    .field {
+      &.music-score {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        & img {
+          max-width: 100%;
+          max-height: 100%;
+
+          border-left: none;
+          border-right: none;
+        }
+      }
+
+      &.music-keyboard {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        & img {
+          max-width: 100%;
+          max-height: 100%;
+
+          border-left: none;
+          border-right: none;
+        }
+      }
+
+      .music-accidental {
+        font-size: smaller;
+        vertical-align: super;
+
+        &:empty {
+          display: none;
+        }
+      }
+    }
+  }
+}

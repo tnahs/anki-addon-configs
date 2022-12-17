@@ -1,0 +1,18 @@
+@use "themes";
+@use "mixin-japanese";
+
+$jp-light-colors: (
+  jp-kanji__font-color: hsla(0, 0%, 0%, 0.3),
+);
+
+$light-colors: map-merge(themes.$light, $jp-light-colors);
+
+@include mixin-japanese.build-stylesheet($theme: light, $colors: $light-colors);
+
+$jp-dark-colors: (
+  jp-kanji__font-color: hsla(0, 0%, 100%, 0.3),
+);
+
+$dark-colors: map-merge(themes.$dark, $jp-dark-colors);
+
+@include mixin-japanese.build-stylesheet($theme: dark, $colors: $dark-colors);
