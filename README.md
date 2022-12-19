@@ -7,6 +7,7 @@
 
     ```shell
     git clone \
+        --single-branch \
         --branch AnkiQuickTags \
         git@github.com:tnahs/anki-addon-configs.git [PATH-TO-USER-FILES]
     ```
