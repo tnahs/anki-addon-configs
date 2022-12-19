@@ -10,6 +10,7 @@ rendered when using this config.
 
     ```shell
     git clone \
+        --single-branch \
         --branch AnkiAssets \
         git@github.com:tnahs/anki-addon-configs.git [PATH-TO-USER-FILES]
     ```
