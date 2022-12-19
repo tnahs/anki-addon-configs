@@ -5,7 +5,7 @@ The current list of add-ons and their configs:
 | Name          | Add-on                                 | Config                                                           |
 | ------------- | -------------------------------------- | ---------------------------------------------------------------- |
 | AnkiAssets    | [tnahs/AnkiAssets][anki-assets]        | [tnahs/anki-addon-configs:AnkiAssets][anki-assets-config]        |
-| AnkiMarker    | [tnahs/AnkiMaker][anki-marker]         | [tnahs/anki-addon-configs:AnkiMarker][anki-marker-config]        |
+| AnkiMarker    | [tnahs/AnkiMarker][anki-marker]        | [tnahs/anki-addon-configs:AnkiMarker][anki-marker-config]        |
 | AnkiQuickTags | [tnahs/AnkiQuickTags][anki-quick-tags] | [tnahs/anki-addon-configs:AnkiQuickTags][anki-quick-tags-config] |
 
 [anki-assets]: https://github.com/tnahs/AnkiAssets
