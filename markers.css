@@ -1,0 +1,81 @@
+/**
+* User defined CSS
+*/
+
+:root {
+  --color-accent: hsla(230, 60%, 70%, 1);
+  --color-highlight-text: hsla(35, 100%, 45%, 1);
+  --color-highlight-background: hsla(45, 100%, 75%, 1);
+  --color-masculine: hsla(210, 90%, 75%, 1);
+  --color-feminine: hsla(334, 90%, 75%, 1);
+}
+
+marker.accent {
+  /**
+   * accent
+   * *abc*
+   * <span class="accent">abc</span>
+   */
+
+  color: var(--color-accent);
+  font-style: unset;
+  font-weight: 400;
+  text-decoration: unset;
+  background-color: unset;
+}
+
+marker.bold {
+  /**
+   * bold
+   * **abc**
+   * <span class="bold">abc</span>
+   */
+
+  color: var(--color-accent);
+  font-style: unset;
+  font-weight: 700;
+  text-decoration: unset;
+  background-color: unset;
+}
+
+marker.highlight {
+  /**
+   * highlight
+   * ==abc==
+   * <span class="highlight">abc</span>
+   */
+
+  color: var(--color-highlight-text);
+  font-style: unset;
+  font-weight: unset;
+  text-decoration: unset;
+  background-color: var(--color-highlight-background);
+}
+
+marker.masculine {
+  /**
+   * masculine
+   * ++abc++
+   * <span class="masculine">abc</span>
+   */
+
+  color: var(--color-masculine);
+  font-style: unset;
+  font-weight: 700;
+  text-decoration: unset;
+  background-color: unset;
+}
+
+marker.feminine {
+  /**
+   * feminine
+   * ~~abc~~
+   * <span class="feminine">abc</span>
+   */
+
+  color: var(--color-feminine);
+  font-style: unset;
+  font-weight: 700;
+  text-decoration: unset;
+  background-color: unset;
+}
